@@ -39,6 +39,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/title_text"
                     android:textSize="@dimen/_25ssp"
+                    android:textColor="@color/colorPrimary"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:padding="@dimen/_15sdp"/>
 
@@ -110,7 +111,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/sign_in"
-                    android:background="@drawable/btn_round"
+                    android:background="@drawable/btn_primary"
                     android:textColor="@color/white"
                     android:layout_marginLeft="@dimen/_30sdp"
                     android:layout_marginRight="@dimen/_30sdp"

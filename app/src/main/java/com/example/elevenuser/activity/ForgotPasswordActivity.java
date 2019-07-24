@@ -33,7 +33,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     @OnClick(R.id.btnSendPass)
     void btnSendPass()
     {
-        Intent intent =  new Intent(ForgotPasswordActivity.this,OtpVerificationActivity.class);
+        Intent intent =  new Intent(ForgotPasswordActivity.this,IntroSliderActivity.class);
         startActivity(intent);
     }
 }
