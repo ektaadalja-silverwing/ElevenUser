@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ElevenUser</string>
+    <string name="title_text">Welcome back to \n Good Food</string>
+    <string name="email">Your Email</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot?</string>
+    <string name="remenber">Remeber</string>
+    <string name="sign_in">S I G N  I N</string>
+    <string name="or">OR</string>
+</resources>
