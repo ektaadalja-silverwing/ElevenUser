@@ -7,4 +7,15 @@
     <string name="remenber">Remeber</string>
     <string name="sign_in">S I G N  I N</string>
     <string name="or">OR</string>
+    <string name="title_text_register">Let\'s Start Making \n Good meals</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="sign_up">S I G N  U P</string>
+    <string name="forgot_password"> Y O U R  P A S S W O R D</string>
+    <string name="forgot_your">F O R G O T</string>
+    <string name="forgot_desc1">Enter Your Email below to recive</string>
+    <string name="forgot_desc2">the instructions to reset your</string>
+    <string name="forgot_desc3">password.</string>
+    <string name="your_email">Your Email Address</string>
+    <string name="send_password">S E N D   P A S S W O R D</string>
 </resources>

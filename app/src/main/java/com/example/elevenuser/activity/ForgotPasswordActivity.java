@@ -10,31 +10,30 @@ import com.example.elevenuser.utils.Tools;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class SignInActivity extends AppCompatActivity {
+public class ForgotPasswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
-        Tools.setSystemBarColor(this,R.color.black);
+        setContentView(R.layout.activity_forgot_password);
+        Tools.setSystemBarColor(this,R.color.white);
         initComponent();
+
     }
 
     private void initComponent() {
         ButterKnife.bind(this);
     }
-    @OnClick(R.id.tv_signed_up_now)
-    void tvSignUp()
+    @OnClick(R.id.imgBackArrow)
+    void imgBackArrow()
     {
-        Intent intent = new Intent(SignInActivity.this,signUpActivity.class);
+        Intent intent =  new Intent(ForgotPasswordActivity.this,SignInActivity.class);
         startActivity(intent);
     }
-
-    @OnClick(R.id.tvForgot)
-    void tvForgot()
+    @OnClick(R.id.btnSendPass)
+    void btnSendPass()
     {
-        Intent intent = new Intent(SignInActivity.this,ForgotPasswordActivity.class);
+        Intent intent =  new Intent(ForgotPasswordActivity.this,OtpVerificationActivity.class);
         startActivity(intent);
     }
-
 }
