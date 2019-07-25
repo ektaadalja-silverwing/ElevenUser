@@ -40,7 +40,7 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
-    // Glide Image Loader
+    // Glide ImageData Loader
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
@@ -63,7 +63,7 @@ dependencies {
     // Ripple Layout
     implementation 'com.balysv:material-ripple:1.0.2'
 
-    // Circular Image View
+    // Circular ImageData View
     implementation 'com.mikhaellopez:circularimageview:3.2.0'
 
     // Check Internet Connection
