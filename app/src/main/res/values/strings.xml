@@ -20,4 +20,6 @@
     <string name="send_password">S E N D   P A S S W O R D</string>
     <string name="breakfast">BREAKFAST</string>
     <string name="breakfast_desc"><![CDATA[A wide variety of breakfast dishes that will \nkeep you going all day & make you have it \nagain for the next bright morning.]]></string>
+    <string name="confirm_password">Confirm Passwrod</string>
+    <string name="restro_cafe">Eleven Eleven</string>
 </resources>
