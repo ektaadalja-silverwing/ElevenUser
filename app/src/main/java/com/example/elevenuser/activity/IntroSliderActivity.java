@@ -26,8 +26,8 @@ import butterknife.ButterKnife;
 
 public class IntroSliderActivity extends AppCompatActivity {
 
-    @BindView(R.id.view_pager)
-    ViewPager viewPager;
+    @BindView(R.id.view_pagers1)
+    ViewPager viewPager1;
 
     private IntroViewPagerAdapter introViewPagerAdapter;
     private static final int MAX_STEP = 3;
@@ -37,14 +37,16 @@ public class IntroSliderActivity extends AppCompatActivity {
             "SOUP & SALAD",
             "APPETIZER",
     };
-    private String about_description_array[] = {
+    private String about_description_array[] =
+            {
             "A wide variety of breakfast dishes that will keep you going all day & make you have it again for the next bright morning.\n" +
                     "\n" +
                     "\n",
             "Luscious soup recipes that any bowl will be blessed to receive & salads to give a boost to your mood.",
             "Appetizers to leave you spell bounded & titillate your taste buds accompanied with scrumptiousness.",
     };
-    private int about_images_array[] = {
+    private int about_images_array[] =
+            {
             R.drawable.fastfood,
             R.drawable.fastfood,
             R.drawable.fastfood,
@@ -64,8 +66,8 @@ public class IntroSliderActivity extends AppCompatActivity {
         // adding bottom dots
         bottomProgressDots(0);
         introViewPagerAdapter = new IntroViewPagerAdapter();
-        viewPager.setAdapter(introViewPagerAdapter);
-        viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
+        viewPager1.setAdapter(introViewPagerAdapter);
+        viewPager1.addOnPageChangeListener(viewPagerPageChangeListener);
 
         Tools.setSystemBarColor(this, R.color.overlay_light_80);
         Tools.setSystemBarLight(this);

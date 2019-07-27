@@ -22,4 +22,6 @@
     <string name="breakfast_desc"><![CDATA[A wide variety of breakfast dishes that will \nkeep you going all day & make you have it \nagain for the next bright morning.]]></string>
     <string name="confirm_password">Confirm Passwrod</string>
     <string name="restro_cafe">Eleven Eleven</string>
+    <string name="offer">OFFER</string>
+    <string name="offer_description">2 PIZZAS STARTING AT 99 EACH</string>
 </resources>

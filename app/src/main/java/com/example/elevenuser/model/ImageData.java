@@ -10,4 +10,5 @@ public class ImageData {
     public String brief;
     public Integer counter = null;
 
+
 }
