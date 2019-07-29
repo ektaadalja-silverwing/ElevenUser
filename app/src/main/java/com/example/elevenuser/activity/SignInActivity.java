@@ -36,10 +36,10 @@ public class SignInActivity extends AppCompatActivity implements Validator.Valid
     @Password(message = "Minimum 6 to 15 Character Require")
     @BindView(R.id.edtPassword)
     EditText edtPassword;
-    @BindView(R.id.switch1)
+   /* @BindView(R.id.switch1)
     Switch switch1;
     @BindView(R.id.tvRemeber)
-    TextView tvRemeber;
+    TextView tvRemeber;*/
     @BindView(R.id.tvForgot)
     TextView tvForgot;
     @BindView(R.id.btnSignIn)

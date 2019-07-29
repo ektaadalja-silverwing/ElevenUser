@@ -8,6 +8,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -24,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.balysv.materialripple.MaterialRippleLayout;
 import com.example.elevenuser.adapter.OfferAdapter;
+import com.example.elevenuser.adapter.RestaurantListAdapter;
 import com.example.elevenuser.model.*;
 import com.example.elevenuser.R;
 import com.example.elevenuser.utils.Tools;
@@ -42,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout layout_dots;
     @BindView(R.id.recyclerOffer)
     RecyclerView recyclerOffer;
+    @BindView(R.id.recyclerRestaurantsList)
+    RecyclerView recyclerRestaurantList;
     // private AdapterImageSlider adapterImageSlider;
     private AdapterImageSlider adapterImageSlider;
     private Runnable runnable = null;
@@ -83,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
     private void initComponent() {
         ButterKnife.bind(this);
         setRecyclerOffer();
+        setRestaurantList();
 
         adapterImageSlider = new AdapterImageSlider(this, new ArrayList<ImageData>());
 
@@ -124,8 +129,14 @@ public class MainActivity extends AppCompatActivity {
         startAutoSlider(adapterImageSlider.getCount());
     }
 
+    private void setRestaurantList() {
+        recyclerRestaurantList.setLayoutManager(new LinearLayoutManager(this));
+        RestaurantListAdapter restaurantListAdapter = new RestaurantListAdapter(this);
+        recyclerRestaurantList.setAdapter(restaurantListAdapter);
+    }
+
     private void setRecyclerOffer() {
-        recyclerOffer.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,true));
+        recyclerOffer.setLayoutManager(new GridLayoutManager(this,2));
         OfferAdapter offerAdapter = new OfferAdapter(this);
         recyclerOffer.setAdapter(offerAdapter);
     }

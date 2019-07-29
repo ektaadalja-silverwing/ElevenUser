@@ -23,5 +23,12 @@
     <string name="confirm_password">Confirm Passwrod</string>
     <string name="restro_cafe">Eleven Eleven</string>
     <string name="offer">OFFER</string>
-    <string name="offer_description">2 PIZZAS STARTING AT 99 EACH</string>
+    <string name="rest_name">Santushti Smoothies and Shakes</string>
+    <string name="find_restaurants">Top 47 Restaurants</string>
+    <string name="near_by">near by</string>
+    <string name="filter">Filter</string>
+    <string name="food_type">North Indian</string>
+    <string name="city_name">Ahmedabad</string>
+    <string name="value_of_star">4.6</string>
+    <string name="delivry_time">Deliver in 20 min.</string>
 </resources>

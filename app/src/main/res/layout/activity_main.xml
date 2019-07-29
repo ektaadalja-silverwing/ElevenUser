@@ -117,7 +117,61 @@
             android:id="@+id/recyclerOffer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/grey_10">
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+        <TextView
+            android:id="@+id/tvFindRest"
+            android:layout_weight="2.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/find_restaurants"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvNearYou"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/near_by"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/colorPrimary"
+               />
+            <ImageView
+                android:id="@+id/imgFilter"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:src="@drawable/ic_filter"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/filter"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerRestaurantsList"
+            android:layout_width="match_parent"
+            android:background="@color/grey_10"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content">
 
         </android.support.v7.widget.RecyclerView>
     </LinearLayout>

@@ -33,7 +33,7 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHol
 
     @Override
     public int getItemCount() {
-        return 6;
+        return 4;
     }
 
     public static class OfferViewHolder extends RecyclerView.ViewHolder{
