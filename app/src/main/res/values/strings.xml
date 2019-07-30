@@ -31,4 +31,6 @@
     <string name="city_name">Ahmedabad</string>
     <string name="value_of_star">4.6</string>
     <string name="delivry_time">Deliver in 20 min.</string>
+    <string name="delivery">Delivery</string>
+    <string name="pickup">Pick up</string>
 </resources>

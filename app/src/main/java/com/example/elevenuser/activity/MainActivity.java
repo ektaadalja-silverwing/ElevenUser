@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -46,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerOffer;
     @BindView(R.id.recyclerRestaurantsList)
     RecyclerView recyclerRestaurantList;
+    @BindView(R.id.navigation)
+    BottomNavigationView navigation;
+    boolean isNavigationHide = false;
+
     // private AdapterImageSlider adapterImageSlider;
     private AdapterImageSlider adapterImageSlider;
     private Runnable runnable = null;
@@ -89,6 +95,39 @@ public class MainActivity extends AppCompatActivity {
         setRecyclerOffer();
         setRestaurantList();
 
+
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.navigation_restaurants:
+                       // mTextMessage.setText(item.getTitle());
+                        navigation.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                        return true;
+                    case R.id.navigation_deal:
+                      //  mTextMessage.setText(item.getTitle());
+                        navigation.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                        return true;
+                    case R.id.navigation_order:
+                        //mTextMessage.setText(item.getTitle());
+                        navigation.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                        return true;
+                    case R.id.navigation_cart:
+                       // mTextMessage.setText(item.getTitle());
+                        navigation.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                        return true;
+                    case R.id.navigation_account:
+                        // mTextMessage.setText(item.getTitle());
+                        navigation.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                        return true;
+                }
+                return false;
+            }
+        });
+
+
+
+
         adapterImageSlider = new AdapterImageSlider(this, new ArrayList<ImageData>());
 
         final List<ImageData> items = new ArrayList<>();
@@ -128,6 +167,14 @@ public class MainActivity extends AppCompatActivity {
 
         startAutoSlider(adapterImageSlider.getCount());
     }
+
+    private void animateNavigation(final boolean hide) {
+        if (isNavigationHide && hide || !isNavigationHide && !hide) return;
+        isNavigationHide = hide;
+        int moveY = hide ? (2 * navigation.getHeight()) : 0;
+        navigation.animate().translationY(moveY).setStartDelay(100).setDuration(300).start();
+    }
+
 
     private void setRestaurantList() {
         recyclerRestaurantList.setLayoutManager(new LinearLayoutManager(this));
