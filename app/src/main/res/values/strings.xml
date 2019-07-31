@@ -33,4 +33,11 @@
     <string name="delivry_time">Deliver in 20 min.</string>
     <string name="delivery">Delivery</string>
     <string name="pickup">Pick up</string>
+    <string name="rest_address">S.G Highway sindhubhavn</string>
+    <string name="rest_contactno">9876543210</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="non_vegetarian">Non - Vegetarian</string>
+    <string name="less_price">Under 99</string>
+    <string name="price">220</string>
+    <string name="add">+Add</string>
 </resources>
