@@ -98,7 +98,7 @@ public class SignInActivity extends AppCompatActivity implements Validator.Valid
 
     @Override
     public void onValidationSucceeded() {
-        Intent intent = new Intent(SignInActivity.this,MainActivity.class);
+        Intent intent = new Intent(SignInActivity.this,DashboardActivity.class);
         startActivity(intent);
 
     }

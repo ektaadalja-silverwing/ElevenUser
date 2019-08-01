@@ -6,17 +6,30 @@
     android:orientation="vertical"
     android:padding="@dimen/_5sdp"
     android:background="@color/white">
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_80sdp"
-        android:src="@drawable/pizza_img"
-        android:scaleType="fitXY"/>
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgSet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/pizza_img"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/imgMove"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/pizza_img"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rest_name"
         android:layout_marginTop="@dimen/_6sdp"
-        android:textColor="@color/grey_20"
+        android:textColor="@color/grey_40"
         android:textSize="@dimen/_12ssp"
         android:layout_marginLeft="@dimen/_10sdp"/>
     <TextView
@@ -28,36 +41,39 @@
         android:textSize="@dimen/_12ssp"
         android:textColor="@color/black"
         android:textStyle="bold"/>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp">
+        android:layout_marginTop="@dimen/_5sdp">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/price"
-            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rs100"
             android:textSize="@dimen/_14ssp"
             android:textStyle="bold"
+            android:layout_alignParentLeft="true"
             android:textColor="@color/colorStar"
+            android:layout_centerVertical="true"
             android:layout_marginTop="@dimen/_10sdp"/>
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.6 "
+            android:id="@+id/tvAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="@color/red_A100"
             android:gravity="center"
             android:textSize="@dimen/_14ssp"
             android:text="@string/add"
-            android:padding="@dimen/_6sdp"
-            android:textStyle="bold"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:background="@drawable/border"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

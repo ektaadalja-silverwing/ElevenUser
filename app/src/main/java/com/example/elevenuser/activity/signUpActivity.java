@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.elevenuser.R;
+import com.example.elevenuser.fragment.DashBoardFragment;
 import com.example.elevenuser.utils.PreferenceManager;
 import com.example.elevenuser.utils.Tools;
 import com.mobsandgeeks.saripaar.ValidationError;
@@ -89,7 +90,7 @@ public class signUpActivity extends AppCompatActivity  implements Validator.Vali
 
     @Override
     public void onValidationSucceeded() {
-        Intent intent =  new Intent(signUpActivity.this,MainActivity.class);
+        Intent intent =  new Intent(signUpActivity.this, DashboardActivity.class);
         startActivity(intent);
 
     }

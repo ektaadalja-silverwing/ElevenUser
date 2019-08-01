@@ -103,6 +103,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/tvVeg"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.8"
@@ -151,16 +152,6 @@
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:background="@color/colorPrimary"
-        app:itemIconTint="@drawable/color_state_white_2"
-        app:itemTextColor="@drawable/color_state_white_2"
-        app:menu="@menu/menu_bottom_navigation_shifting" />
 
 </android.support.design.widget.CoordinatorLayout>
 
