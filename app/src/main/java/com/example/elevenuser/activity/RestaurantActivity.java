@@ -70,6 +70,8 @@ public class RestaurantActivity extends Fragment implements AddCartAdapter.OnCli
         addCartAdapter.setOnClickListener(this);
     }
 
+
+
     @Override
     public void onCartClick(int position, ImageView imageView) {
         moveToCart(imageView);
