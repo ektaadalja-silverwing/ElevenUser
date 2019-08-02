@@ -213,7 +213,8 @@ public class DashBoardFragment extends Fragment implements RestaurantListAdapter
             this.onItemClickListener = onItemClickListener;
         }
 
-        // constructor
+
+
         private AdapterImageSlider(Context context, ArrayList<ImageData> items) {
             this.context =context ;
             this.items = items;
