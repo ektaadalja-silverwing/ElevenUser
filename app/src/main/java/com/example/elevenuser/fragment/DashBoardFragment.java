@@ -217,6 +217,7 @@ public class DashBoardFragment extends Fragment implements RestaurantListAdapter
         private AdapterImageSlider(Context context, ArrayList<ImageData> items) {
             this.context =context ;
             this.items = items;
+
         }
 
         @Override
